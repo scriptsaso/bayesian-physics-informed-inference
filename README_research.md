@@ -44,7 +44,7 @@ Posterior inference is performed using Hamiltonian Monte Carlo (NUTS).
 
 ## Model Architecture
 
-![Model Architecture](docs/architecture.png)
+![Model Architecture](docs/Bayesian_Model_Structure.png)
 
 *Physics-informed Bayesian regression pipeline integrating GIWAXS/GISAXS structural descriptors with stimulus-conditioned inference.*
 
