@@ -1,0 +1,55 @@
+# -----------------------
+# Python
+# -----------------------
+venv/
+__pycache__/
+app/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# -----------------------
+# Environment / Secrets
+# -----------------------
+.env
+.env.*
+*.env
+
+# -----------------------
+# Jupyter / temp
+# -----------------------
+.ipynb_checkpoints/
+
+# -----------------------
+# OS files
+# -----------------------
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# -----------------------
+# Terraform
+# -----------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# -----------------------
+# Build / cache
+# -----------------------
+*.log
+dist/
+build/
+
+# -----------------------
+# Local artifacts)
+# -----------------------
+data/
+artifacts/*.nc
+artifacts/*.png
+artifacts/best_film.txt

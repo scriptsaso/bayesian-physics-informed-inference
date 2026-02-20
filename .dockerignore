@@ -1,0 +1,27 @@
+# Python cache
+app/__pycache__/
+__pycache__/
+*.pyc
+
+# Virtual env
+venv/
+
+# Git
+.git/
+.gitignore
+
+# Local data
+data/
+
+# Notebooks
+*.ipynb
+
+# Training traces
+artifacts/*.nc
+
+# Training plots
+artifacts/*.png
+artifacts/*.txt
+
+# Freeze script (training stage only)
+freeze_model.py
