@@ -27,17 +27,26 @@ The objective is to quantify interfacial area modulation under:
 
 The model maps structural descriptors to interfacial metrics using a Bayesian regression framework.
 
-\[
+$$
 y \sim \text{Laplace}(\mu, b)
-\]
+$$
 
-\[
+$$
 \mu = \alpha + X_{morph}\beta + X_{stim}\gamma
-\]
+$$
+
 
 The Laplace likelihood provides robustness to experimental outliers and heavy-tailed residual behavior.
 
 Posterior inference is performed using Hamiltonian Monte Carlo (NUTS).
+
+---
+
+## Model Architecture
+
+![Model Architecture](docs/Bayesian_Model_Structure.png)
+
+*Physics-informed Bayesian regression pipeline integrating GIWAXS/GISAXS structural descriptors with stimulus-conditioned inference.*
 
 ---
 
