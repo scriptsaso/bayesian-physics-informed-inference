@@ -27,13 +27,14 @@ The objective is to quantify interfacial area modulation under:
 
 The model maps structural descriptors to interfacial metrics using a Bayesian regression framework.
 
-\[
+$$
 y \sim \text{Laplace}(\mu, b)
-\]
+$$
 
-\[
+$$
 \mu = \alpha + X_{morph}\beta + X_{stim}\gamma
-\]
+$$
+
 
 The Laplace likelihood provides robustness to experimental outliers and heavy-tailed residual behavior.
 
