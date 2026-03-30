@@ -14,6 +14,25 @@ This project integrates experimental GIWAXS/GISAXS structural data with Hamilton
 - Bridges experimental physics and deployable ML systems
 
 ---
+## LLM-Augmented Scientific Interpretation
+
+After Bayesian inference and SHAP analysis, posterior results are 
+automatically interpreted via Claude API, providing:
+
+- Physical interpretation of dominant structural descriptors
+- Assessment of interfacial area behavior under current conditions
+- Suggested next experimental conditions
+- Confidence levels for each conclusion
+
+This closes the hypothesis → analysis → reasoning loop, enabling 
+autonomous scientific discovery workflows.
+
+### Usage
+Set your API key before running:
+```bash
+export ANTHROPIC_API_KEY="your-key-here"
+```
+Then run in `ppc` mode — interpretation is generated automatically.
 
 ## Key Features
 

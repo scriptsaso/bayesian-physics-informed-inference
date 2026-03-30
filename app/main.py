@@ -66,5 +66,26 @@ def main():
             feature_names
         )
 
+        # LLM Interpretation
+        from app.llm_interpreter import interpret_posterior
+        
+        posterior_stats = {
+            "alpha_mean": float(α_mean),
+            "top_morphology_coefficients": dict(zip(morph_cols, coef_mean[:len(morph_cols)].tolist())),
+            "top_stimulus_coefficients": dict(zip(stim_cols, coef_mean[len(morph_cols):].tolist()))
+        }
+        
+        shap_summary = {
+            "best_film_index": int(best_idx),
+            "best_film_interfacial_value": float(best_value),
+            "feature_names": feature_names
+        }
+        
+        interpretation = interpret_posterior(shap_summary, posterior_stats)
+        print("\n========== LLM Scientific Interpretation ==========")
+        print(interpretation)
+        print("===================================================\n")
+        with open("artifacts/llm_interpretation.txt", "w", encoding="utf-8") as f:
+            f.write(interpretation)
 if __name__ == "__main__":
     main()

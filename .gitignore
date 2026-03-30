@@ -52,4 +52,6 @@ build/
 data/
 artifacts/*.nc
 artifacts/*.png
-artifacts/best_film.txt
+artifacts/*.txt
+artifacts/best_film.txtartifacts/llm_interpretation.txt
+.env
